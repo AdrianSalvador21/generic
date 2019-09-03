@@ -1,0 +1,19 @@
+<two-full-screen-spinner *ngIf="loading"></two-full-screen-spinner>
+
+<div class="app-container" [class.app-is-mobile]="mobileQuery.matches">
+
+  <two-header *ngIf="isAuthenticated" (menuIconClicked)="appDrawer?.toggle()"></two-header>
+
+  <mat-sidenav-container class="app-sidenav-container">
+    <mat-sidenav #appDrawer mode="over" opened="false" *ngIf="isAuthenticated">
+      <two-menu [appDrawer]="appDrawer"></two-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="scrollable">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!--<two-footer></two-footer>-->
+
+</div>

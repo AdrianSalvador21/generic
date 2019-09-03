@@ -1,0 +1,29 @@
+{
+  "/DynamicServiceBroker": {
+    "target": "http://172.16.1.31:15080/DynamicServiceBroker",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/DynamicServiceBroker": ""
+    }
+  },
+  "/SecurityManager": {
+    "target": "http://172.16.1.31:15080/SecurityManager",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/SecurityManager": ""
+    }
+  },
+  "/reportGenerator-service": {
+    "target": "http://172.16.1.31:15080/reportGenerator-service",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/reportGenerator-service": ""
+    }
+  }
+}

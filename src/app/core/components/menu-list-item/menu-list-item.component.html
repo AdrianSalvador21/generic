@@ -1,0 +1,15 @@
+<a (click)="onItemSelected(item)"
+   [ngClass]="{'active': item.objData ? router.isActive(item.objData, true): false, 'expanded': expanded, 'child-selected': selected && isChild, 'selected': selected && !isChild}">
+  <!--<i *ngIf="depth == 0" class="menu-icon {{item.icon}} {{item.icon + '-inserted'}}"></i>-->
+  <mat-icon *ngIf="depth == 0" class="menu-icon">{{item.icon}}</mat-icon>
+  <span class="menu-title">{{item.description1 | translate}}</span>
+  <i *ngIf="item.children && item.children.length"
+     class="ion chevron {{expanded ? 'ion-chevron-down' : 'ion-chevron-left'}}"></i>
+</a>
+<ul *ngIf="expanded" class="animated fast">
+  <li class="menu-item-children" *ngFor="let child of item.children">
+    <two-menu-list-item [appDrawer]="appDrawer" [item]="child" [depth]="depth+1" [isChild]="true">
+    </two-menu-list-item>
+  </li>
+</ul>
+

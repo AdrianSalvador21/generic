@@ -1,0 +1,17 @@
+<div class="user-info-container">
+  <div [ngStyle]="{'background': 'url(' + userImage + ') no-repeat center center', 'background-size': 'cover'}" class="info-image">
+  </div>
+  <div class="user-info">
+    <div class="user-name" fxLayout="row">
+      <mat-list-item class="name-column" fxFlex="20">{{userDetail.firstName}} {{userDetail.secondSurname}} {{userDetail.lastName}}</mat-list-item>
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+</div>
+
+<div class="user-info">
+  <div class="user-name" fxLayout="row" *ngFor="let field of fieldsDetail">
+    <mat-list-item class="info-column" fxFlex="30">{{'security.profile.editProfile.' + field | translate}}</mat-list-item>
+    <mat-list-item class="info-column-data" fxFlex="20">{{userDetail[field]}}</mat-list-item>
+  </div>
+</div>

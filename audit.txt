@@ -1,0 +1,296 @@
+=== npm audit security report ===                        
+                                                                                
+                                                                                
+                                 Manual Review                                  
+             Some vulnerabilities require your attention to resolve             
+                                                                                
+          Visit https://go.npm.me/audit-guide for additional guidance           
+                                                                                
+                                                                                
+  High            Arbitrary File Overwrite                                      
+                                                                                
+  Package         tar                                                           
+                                                                                
+  Patched in      >=4.4.2                                                       
+                                                                                
+  Dependency of   npm                                                           
+                                                                                
+  Path            npm > libcipm > npm-lifecycle > node-gyp > tar                
+                                                                                
+  More info       https://nodesecurity.io/advisories/803                        
+                                                                                
+                                                                                
+  High            Arbitrary File Overwrite                                      
+                                                                                
+  Package         tar                                                           
+                                                                                
+  Patched in      >=4.4.2                                                       
+                                                                                
+  Dependency of   npm                                                           
+                                                                                
+  Path            npm > libnpm > npm-lifecycle > node-gyp > tar                 
+                                                                                
+  More info       https://nodesecurity.io/advisories/803                        
+                                                                                
+                                                                                
+  High            Arbitrary File Overwrite                                      
+                                                                                
+  Package         tar                                                           
+                                                                                
+  Patched in      >=4.4.2                                                       
+                                                                                
+  Dependency of   npm                                                           
+                                                                                
+  Path            npm > node-gyp > tar                                          
+                                                                                
+  More info       https://nodesecurity.io/advisories/803                        
+                                                                                
+                                                                                
+  High            Arbitrary File Overwrite                                      
+                                                                                
+  Package         tar                                                           
+                                                                                
+  Patched in      >=4.4.2                                                       
+                                                                                
+  Dependency of   npm                                                           
+                                                                                
+  Path            npm > npm-lifecycle > node-gyp > tar                          
+                                                                                
+  More info       https://nodesecurity.io/advisories/803                        
+                                                                                
+                                                                                
+  High            Arbitrary File Overwrite                                      
+                                                                                
+  Package         tar                                                           
+                                                                                
+  Patched in      >=4.4.2                                                       
+                                                                                
+  Dependency of   @angular-devkit/build-angular                                 
+                                                                                
+  Path            @angular-devkit/build-angular > node-sass > node-gyp > tar    
+                                                                                
+  More info       https://nodesecurity.io/advisories/803                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > assemble-core > assemble-fs > vinyl-fs >             
+                  glob-stream > micromatch > braces                             
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > assemble-core > assemble-streams > match-file >      
+                  micromatch > braces                                           
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > assemble-core > base-task > composer > micromatch >  
+                  braces                                                        
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > assemble-core > templates > get-view > match-file >  
+                  micromatch > braces                                           
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > assemble-core > templates > layouts > get-view >     
+                  match-file > micromatch > braces                              
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > assemble-core > templates > match-file > micromatch  
+                  > braces                                                      
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-cli-process > base-config-process > micromatch  
+                  > braces                                                      
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-config-process > micromatch > braces            
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-generators > base-task > composer > micromatch  
+                  > braces                                                      
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-questions > question-store > common-config >    
+                  composer > micromatch > braces                                
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-runtimes > micromatch > braces                  
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Low             Regular Expression Denial of Service                          
+                                                                                
+  Package         braces                                                        
+                                                                                
+  Patched in      >=2.3.1                                                       
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > common-config > composer > micromatch > braces       
+                                                                                
+  More info       https://nodesecurity.io/advisories/786                        
+                                                                                
+                                                                                
+  Moderate        Prototype Pollution                                           
+                                                                                
+  Package         defaults-deep                                                 
+                                                                                
+  Patched in      No patch available                                            
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-cli-process > base-config-process >             
+                  base-config-schema > base-pkg > expand-pkg > defaults-deep    
+                                                                                
+  More info       https://nodesecurity.io/advisories/778                        
+                                                                                
+                                                                                
+  Moderate        Prototype Pollution                                           
+                                                                                
+  Package         defaults-deep                                                 
+                                                                                
+  Patched in      No patch available                                            
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-cli-process > base-pkg > expand-pkg >           
+                  defaults-deep                                                 
+                                                                                
+  More info       https://nodesecurity.io/advisories/778                        
+                                                                                
+                                                                                
+  Moderate        Prototype Pollution                                           
+                                                                                
+  Package         defaults-deep                                                 
+                                                                                
+  Patched in      No patch available                                            
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-config-process > base-config-schema > base-pkg  
+                  > expand-pkg > defaults-deep                                  
+                                                                                
+  More info       https://nodesecurity.io/advisories/778                        
+                                                                                
+                                                                                
+  Moderate        Prototype Pollution                                           
+                                                                                
+  Package         defaults-deep                                                 
+                                                                                
+  Patched in      No patch available                                            
+                                                                                
+  Dependency of   update                                                        
+                                                                                
+  Path            update > base-generators > base-pkg > expand-pkg >            
+                  defaults-deep                                                 
+                                                                                
+  More info       https://nodesecurity.io/advisories/778                        
+                                                                                
+found 21 vulnerabilities (12 low, 4 moderate, 5 high) in 78423 scanned packages
+  21 vulnerabilities require manual review. See the full report for details.

@@ -1,0 +1,327 @@
+@import "constants";
+@import "functions";
+
+.mat-expansion-panel {
+  width: 100% !important;
+}
+
+.mat-expansion-panel-header {
+  .mat-content {
+    display: block !important;
+  }
+}
+
+.mat-expansion-panel-header-title {
+  .mat-icon {
+    height: 18px !important;
+    width: 18px !important;
+    font-size: 16px !important;
+  }
+}
+
+.mat-expansion-indicator {
+  display: none;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 !important;
+}
+
+.mat-menu-panel {
+  margin-top: 0.5rem !important;
+  min-width: 2rem !important;
+}
+
+.mat-menu-content {
+  background: $white;
+}
+
+.mat-menu-item, .mat-menu-item .mat-icon {
+  color: $secondary--color;
+  font-weight: 100;
+}
+
+.mat-menu-item {
+  .user-info-icon {
+    .mat-icon {
+      margin-right: 2px !important;
+      color: $menu-item-color !important;
+      font-size: 1.2rem !important;
+      float: right !important;
+    }
+  }
+}
+
+.mat-menu-item {
+  .user-logout-icon {
+    .mat-icon {
+      margin-right: 3px !important;
+      color: $menu-item-color !important;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      font-size: 1.2rem !important;
+      float: right !important;
+    }
+  }
+}
+
+.mat-menu-item {
+  padding: 0 5px !important;
+  height: 32px !important;
+  font-size: 0.7rem !important;
+  font-weight: 300 !important;
+  line-height: 0 !important;
+}
+
+.mat-raised-button[disabled] {
+  background: $grey !important;
+}
+
+.mat-dialog-container {
+  background: $white;
+  color: $secondary--color;
+  padding: 0 !important;
+}
+
+.mat-dialog-content {
+  text-align: center;
+  padding: 1rem calculateRem(24px) !important;
+}
+
+.mat-dialog-title {
+  text-align: center;
+}
+
+.mat-list-avatar {
+  height: calculateRem(55px) !important;
+  width: calculateRem(55px) !important;
+}
+
+.mat-card-image {
+  margin-bottom: -28px !important;
+  border-top: 1px solid $light-grey;
+}
+
+.mat-expansion-panel {
+  .mat-expansion-panel-header {
+    .mat-content {
+      .mat-expansion-panel-header-description {
+        .element-title {
+          color: $black !important;
+          font-weight: 400 !important;
+        }
+      }
+    }
+  }
+}
+
+.mat-drawer-container {
+  background-color: $background--color;
+}
+
+.mat-card {
+  margin-bottom: $margin-bottom !important;
+  border-radius: $border-radius !important;
+  border: 1px solid $borders--color !important;
+}
+
+.mat-card-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid $borders--color;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 0 !important;
+  font-size: $title-font-size !important;
+}
+
+.mat-card-actions {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mat-form-field {
+  display: block !important;
+}
+
+.mat-card-footer {
+  border-top: 1px solid $borders--color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 !important;
+  padding: 1.25rem;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+}
+
+.mat-card-actions, .mat-card-content, .mat-card-subtitle {
+  margin-bottom: 0 !important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: $primary--color;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: $primary--color;
+}
+
+.mat-badge-content {
+  color: $white;
+  background: $primary--color;
+}
+
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+  color: $primary--color;
+}
+
+.mat-button.mat-primary .mat-button-focus-overlay, .mat-icon-button.mat-primary .mat-button-focus-overlay, .mat-stroked-button.mat-primary .mat-button-focus-overlay {
+  background-color: $primary--color;
+}
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+  background-color: $primary--color;
+}
+
+.mat-checkbox-checked.mat-primary .mat-checkbox-background, .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background {
+  background-color: $primary--color;
+}
+
+.mat-checkbox:not(.mat-checkbox-disabled).mat-primary .mat-checkbox-ripple .mat-ripple-element {
+  background-color: $primary--color;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: $primary--color;
+  color: $white;
+}
+
+.mat-calendar-body-selected {
+  background-color: $primary--color;
+  color: $white;
+}
+
+.mat-datepicker-toggle-active {
+  color: $primary--color;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $primary--color;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: $primary--color;
+}
+
+.mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid) .mat-form-field-infix::after {
+  color: $primary--color;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: $primary--color;
+}
+
+.mat-icon.mat-primary {
+  color: $primary--color;
+}
+
+.mat-input-element {
+  caret-color: $primary--color;
+}
+
+.mat-progress-bar-fill::after {
+  background-color: $primary--color;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: $primary--color;
+}
+
+.mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
+  border-color: $primary--color;
+}
+
+.mat-radio-button.mat-primary .mat-radio-inner-circle, .mat-radio-button.mat-primary .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-primary:active .mat-radio-persistent-ripple {
+  background-color: $primary--color;
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+  color: $primary--color;
+}
+
+.mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
+  background-color: $primary--color;
+}
+
+.mat-slide-toggle.mat-primary.mat-checked .mat-ripple-element {
+  background-color: $primary--color;
+}
+
+.mat-primary .mat-slider-thumb, .mat-primary .mat-slider-thumb-label, .mat-primary .mat-slider-track-fill {
+  background-color: $primary--color;
+}
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: $primary--color;
+  color: $white;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: $primary--color;
+}
+
+.mat-tab-group.mat-background-primary .mat-tab-header, .mat-tab-group.mat-background-primary .mat-tab-links, .mat-tab-nav-bar.mat-background-primary .mat-tab-header, .mat-tab-nav-bar.mat-background-primary .mat-tab-links {
+  background-color: $primary--color;
+}
+
+.mat-toolbar.mat-primary {
+  background: $primary--color;
+  color: $white;
+}
+
+.mat-secondary {
+  background: $black;
+  color: $white;
+}
+
+td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type {
+  padding-right: 0 !important;
+}
+
+.changePassword-form {
+  .mat-form-field {
+    .mat-form-field-wrapper {
+      padding-bottom: 0em;
+    }
+  }
+}
+
+.select-spinner {
+  .spinner-container {
+    background-color: rgba(125, 125, 125, 0.46) !important;
+    .mat-spinner {
+      top: calc(50% - 20px) !important;
+      left: calc(50% - 30px) !important;
+      width: 50px !important;
+      height: 50px !important;
+      svg {
+        width: 50px !important;
+        height: 50px !important;
+        circle {
+          stroke-width: 5% !important;
+        }
+      }
+    }
+  }
+}
+
+.user-info {
+  .mat-divider-horizontal {
+    position: relative !important;
+  }
+}
+

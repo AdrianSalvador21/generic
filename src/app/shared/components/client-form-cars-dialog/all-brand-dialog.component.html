@@ -1,0 +1,5 @@
+<div mat-dialog-content class="container-dialog-brand">
+  <mat-card class="card-dialog-brand" *ngFor="let data of allData">
+      <img mat-card-image (click)="onNoClick(data['brand'])" class="img-dialog-brand"  src="{{brandImage + data['logo']}}">
+  </mat-card>
+</div>

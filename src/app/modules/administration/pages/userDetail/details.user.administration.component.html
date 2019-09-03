@@ -1,0 +1,10 @@
+<div class="container" fxLayout="row">
+  <div fxFlex="30">
+    <two-administration-user-profile [data]="administrationState"></two-administration-user-profile>
+  </div>
+  <div fxFlex="70">
+    <two-administration-user-data [data]="administrationState"></two-administration-user-data>
+    <two-roles-detail-user-administration [data]="administrationState" [rolesInput]="roles"></two-roles-detail-user-administration>
+  </div>
+</div>
+

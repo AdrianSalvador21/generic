@@ -1,0 +1,39 @@
+<div class="container-data" *ngIf="!loadingData">
+  <mat-card class="mat-card-data">
+    <div class="divider">
+      <div cdkDropListGroup>
+        <div class="example-container">
+          <div class="roles-table-container">
+            <p class="roles-title">{{'administration.components.data.roles' | translate}}</p>
+            <div
+              cdkDropList
+              [cdkDropListData]="todo"
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              <div class="example-box"  *ngFor="let item of todo" cdkDrag>{{item  | titlecase}}</div>
+            </div>
+          </div>
+
+          <div class="roles-table-container">
+            <p class="roles-title">{{'administration.components.data.roles' | translate}}</p>
+            <div
+              cdkDropList
+              [cdkDropListData]="done"
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              <div class="example-box" *ngFor="let item of done" cdkDrag>{{item | titlecase}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+  <div class="containerErrors">
+    <div fxFlex="70">
+      <mat-card *ngIf="todo.length === 0" class="errorRoles">El usuario no cuenta con ningun rol </mat-card>
+    </div>
+    <div fxFlex="30">
+      <button  mat-raised-button color="primary" class="buttonSaveRoles" (click)="updateRoles()">{{'buttons.save' | translate}}</button>
+    </div>
+</div>
+</div>

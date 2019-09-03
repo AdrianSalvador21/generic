@@ -1,0 +1,26 @@
+@import "constants";
+@import "mixins";
+
+.logo-container {
+  background-color: $login-banner--color;
+  height: 14rem;
+  margin-bottom: -4rem;
+}
+
+.login-logo {
+  display: flex;
+  width: 12.5rem;
+  height: 5rem;
+  background-size: 100% auto !important;
+  background: url('../../../../../assets/images/LOGOS_2INNOVATE.png') no-repeat center center;
+}
+
+.login-container-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-outlet {
+}

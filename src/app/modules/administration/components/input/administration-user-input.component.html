@@ -1,0 +1,14 @@
+<form #formInput="ngForm" [formGroup]="highForm">
+ <mat-form-field  appearance="outline" class="input">
+   <mat-label>{{'buttons.search-user' | translate}}</mat-label>
+   <input name="name"
+          matInput
+          autocomplete="off"
+          twoAutoFocus
+          placeholder="{{'buttons.search-user' | translate}}"
+          formControlName="name"#name>
+ </mat-form-field>
+ <div class="administration-button-container">
+    <button (click)="sendName(name.value)"mat-raised-button color="primary"[disabled]="!name.value">{{'buttons.search' | translate}}</button>
+ </div>
+</form>

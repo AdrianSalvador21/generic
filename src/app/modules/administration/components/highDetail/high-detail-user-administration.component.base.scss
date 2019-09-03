@@ -1,0 +1,17 @@
+@import "constants";
+@import "mixins";
+
+.high-card {
+  min-width: 35rem;
+  max-width: 60%;
+  margin: 4% 20% 0 20%;
+  padding: 0;
+}
+.login-card-content {
+  padding: 1.75rem 1.75rem;
+  background-color: $white;
+}
+.high-user-form-field {
+  width: 80%;
+  margin: 2% 20% 0 20%;
+}

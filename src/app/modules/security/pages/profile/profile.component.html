@@ -1,0 +1,25 @@
+<div class="full-profile">
+  <div class="profile-container">
+    <mat-card>
+      <div fxLayout="row">
+        <div fxFlex="20">
+          <div class="profile-menu-container">
+            <mat-list>
+              <mat-list-item class="profile-menu-item" *ngFor="let item of navItems; let i = index" (click)="changeOption(item.route)">
+                <span [ngClass]="{'profile-menu-item-active': item.route == activeRoute}">{{'security.profile.menu.options.' + item.displayName | translate}}</span>
+                <mat-divider *ngIf="i !== navItems.length - 1"></mat-divider>
+              </mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+        <div fxFlex="80">
+          <div class="profile-content-container">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+

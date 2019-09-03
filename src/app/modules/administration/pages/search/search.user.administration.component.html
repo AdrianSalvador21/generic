@@ -1,0 +1,8 @@
+<mat-card>
+<div fxLayout="row">
+   <div fxFlex="100" fxFlex.gt-sm="100" class="search-container">
+    <two-administration-user-input (sendTheName)="sendName($event)"></two-administration-user-input>
+    <two-administration-user-list [data]="data" *ngIf="!!data"></two-administration-user-list>
+   </div>
+ </div>
+</mat-card>

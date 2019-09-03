@@ -1,0 +1,146 @@
+<mat-card class="high-card">
+  <mat-card-header>
+    <mat-card-title>{{'administration.components.high-user.high-user' | translate}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="login-card-content">
+    <form class="login-form changePassword-form" [formGroup]="highForm" #form="ngForm" (submit)="sendDataHigh()">
+      <!--Password control-->
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.name' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="firstname"
+                   type="text"
+                   twoAutoFocus
+                   formControlName="firstname" required>
+          </mat-form-field>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.first-surname' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="lastname"
+                   type="text"
+                   formControlName="lastname" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.second-surname' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="lastname2"
+                   type="text"
+                   formControlName="lastname2" required>
+          </mat-form-field>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.user-name' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="userName"
+                   type="text"
+                   formControlName="userName" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.email' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="email"
+                   type="email"
+                   formControlName="email" required>
+          </mat-form-field>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.password' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="password"
+                   type="password"
+                   formControlName="password" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.document-id' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="documentId"
+                   type="text"
+                   formControlName="documentId" required>
+          </mat-form-field>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-select placeholder="Tipo de docuemnto" formControlName="documentType">
+              <mat-option value="">{{'administration.components.high-user.document-type' | translate}}</mat-option>
+              <mat-option *ngFor="let type of documentTypes" [value]="type">
+                {{type}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-select placeholder="Pais" formControlName="country">
+              <mat-option value="">{{'administration.components.high-user.country' | translate}}</mat-option>
+              <mat-option *ngFor="let country of countries" [value]="country">
+                {{country}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.citizenship' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="citizenship"
+                   type="text"
+                   formControlName="citizenship" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.birth-day' | translate}}</mat-label>
+            <input matInput [matDatepicker]="picker"
+                   matInput name="birthDay"
+                   placeholder="Fecha de nacicmiento"
+                   formControlName="birthDay" required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="high-user-form-field">
+            <mat-label>{{'administration.components.high-user.phone' | translate}}</mat-label>
+            <input autocomplete="off"
+                   matInput name="phone"
+                   type="text"
+                   formControlName="phone" required>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <!--Buttons-->
+      <div fxLayout="row">
+        <div fxFlex="94" fxFlex.gt-sm="94">
+          <mat-card-actions class="button-container-right">
+            <button type="submit" class="change-password-button"  mat-raised-button color="primary">
+              {{'buttons.save' | translate}}
+            </button>
+          </mat-card-actions>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

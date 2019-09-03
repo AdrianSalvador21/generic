@@ -1,0 +1,78 @@
+<div fxLayout="row">
+  <div fxFlex="100" fxFlex.gt-sm="100">
+    <mat-checkbox class="unique-date-checkbox">Required</mat-checkbox>
+    <mat-checkbox class="unique-date-checkbox">Enabled</mat-checkbox>
+  </div>
+</div>
+
+<div class="date-container">
+  <form [formGroup]="minDate">
+  <div fxLayout="row">
+    <div fxFlex="100" fxFlex.gt-sm="100">
+      <mat-checkbox formControlName="dateMinCheck" class="unique-date-checkbox">Min</mat-checkbox>
+    </div>
+  </div>
+
+  <div fxLayout="row">
+    <div fxFlex="60" fxFlex.gt-sm="60">
+      <mat-radio-group formControlName="dateType">
+        <mat-radio-button value="1">Current day</mat-radio-button>
+        <mat-radio-button value="2">Variable</mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field class="variable-input">
+        <input formControlName="dateValue" matInput placeholder="Value">
+      </mat-form-field>
+    </div>
+  </div>
+  </form>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="date-container">
+  <form [formGroup]="maxDate">
+    <div fxLayout="row">
+      <div fxFlex="100" fxFlex.gt-sm="100">
+        <mat-checkbox formControlName="dateMinCheck" class="unique-date-checkbox">Max</mat-checkbox>
+      </div>
+    </div>
+
+    <div fxLayout="row">
+      <div fxFlex="60" fxFlex.gt-sm="60">
+        <mat-radio-group formControlName="dateType">
+          <mat-radio-button value="1">Current day</mat-radio-button>
+          <mat-radio-button value="2">Variable</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field class="variable-input">
+          <input formControlName="dateValue" matInput placeholder="Value">
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="date-container">
+  <form [formGroup]="valueDate">
+    <div fxLayout="row">
+      <div fxFlex="100" fxFlex.gt-sm="100">
+        <mat-checkbox formControlName="dateMinCheck" class="unique-date-checkbox">Value</mat-checkbox>
+      </div>
+    </div>
+
+    <div fxLayout="row">
+      <div fxFlex="60" fxFlex.gt-sm="60">
+        <mat-radio-group formControlName="dateType">
+          <mat-radio-button value="1">Current day</mat-radio-button>
+          <mat-radio-button value="2">Variable</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field class="variable-input">
+          <input formControlName="dateValue" matInput placeholder="Value">
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>
+
+

@@ -1,0 +1,83 @@
+@import "mixins";
+
+.app-toolbar {
+  color: $grey;
+  background: $secondary--color;
+  display: flex;
+}
+
+.header-button-container {
+  width: 30%;
+}
+
+.header-container {
+  width: 70%;
+  align-content: end;
+}
+
+.header-content {
+  float: right;
+  width: auto;
+  display: flex;
+}
+
+.user-info-container {
+  // display: flex;
+}
+
+.user-menu-content {
+  margin: 0 0.5rem 0 0.5rem;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.user-info-container {
+  margin-bottom: 0.3rem;
+  padding: 0.3rem;
+  display: flex;
+}
+
+.user-info {
+  margin-left: 1rem;
+  color: $menu-item-color;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.user-info-menu-option {
+  font-size: 0.8rem;
+  margin: 0.8rem 0.4rem 0.8rem 0.6rem;
+  color: $menu-item-color;
+  float: left;
+}
+
+.logout-button {
+  // margin-top: 0.3rem;
+}
+
+.user-image {
+  border: solid $menu-item-color 1px;
+  cursor: pointer;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.user-info-image {
+  border: solid $grey 1px;
+  cursor: pointer;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+.user-option-container {
+  float: right;
+}
+
+

@@ -1,0 +1,87 @@
+<div fxLayout="row">
+  <div fxFlex="100" fxFlex.gt-sm="100">
+    <div class="element-options">
+      <form class="login-form" [formGroup]="inputForm">
+        <div fxLayout="row">
+          <div fxFlex="100" fxFlex.gt-sm="100">
+            <!--Label control-->
+            <mat-form-field class="input-form-field">
+              <input autocomplete="off"
+                     matInput
+                     name="label"
+                     type="text"
+                     placeholder= "{{'dynamic-form-generator.elementsConfig.input.form.label-control' | translate}}"
+                     formControlName="label" required>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="row">
+          <div fxFlex="100" fxFlex.gt-sm="100">
+            <!--Name control-->
+            <mat-form-field class="input-form-field">
+              <input autocomplete="off"
+                     matInput name="name"
+                     type="text"
+                     placeholder="{{'dynamic-form-generator.elementsConfig.input.form.name-control' | translate}}"
+                     formControlName="name" required>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="row">
+          <div fxFlex="100" fxFlex.gt-sm="100">
+            <!--InputType control-->
+            <mat-form-field class="input-form-field">
+              <mat-select placeholder="{{'dynamic-form-generator.elementsConfig.input.form.inputType-control' | translate}}"
+                          formControlName="inputType">
+                <mat-option *ngFor="let type of inputTypes" [value]="type">
+                  {{'dynamic-form-generator.elementsConfig.input.form.inputTypes.' + type | translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+
+      <div fxLayout="row">
+        <div fxFlex="100" fxFlex.gt-sm="100">
+          <!--Validators control-->
+          <form [formGroup]="validationsForm">
+            <section class="example-radio-group">
+              <label class="example-radio-group">{{'dynamic-form-generator.elementsConfig.input.form.validators-control' | translate}}</label>
+
+              <div fxLayout="row">
+                <div fxFlex="50" fxFlex.gt-sm="50" class="example-radio-group">
+                  <mat-checkbox (change)="activeInput('maxLengthValue', $event)" formControlName="maxLength" class="example-margin">
+                    {{'dynamic-form-generator.elementsConfig.input.form.validators.maxLength' | translate}}
+                  </mat-checkbox>
+                  <mat-form-field class="input-control">
+                    <input formControlName="maxLengthValue" matInput placeholder="">
+                  </mat-form-field>
+                  <mat-checkbox formControlName="required" class="example-margin">
+                    {{'dynamic-form-generator.elementsConfig.input.form.validators.required' | translate}}
+                  </mat-checkbox>
+                </div>
+
+                <div fxFlex="50" fxFlex.gt-sm="50" class="example-radio-group" style="padding-left: 50px">
+                  <mat-checkbox (change)="activeInput('minLengthValue', $event)" formControlName="minLength" class="example-margin">
+                    {{'dynamic-form-generator.elementsConfig.input.form.validators.minLength' | translate}}
+                  </mat-checkbox>
+                  <mat-form-field class="input-control">
+                    <input formControlName="minLengthValue" matInput placeholder="">
+                  </mat-form-field>
+                  <mat-checkbox (change)="activeInput('patternValue', $event)" formControlName="pattern" class="example-margin">
+                    {{'dynamic-form-generator.elementsConfig.input.form.validators.pattern' | translate}}
+                  </mat-checkbox>
+                  <mat-form-field class="input-control">
+                    <input formControlName="patternValue" matInput placeholder="">
+                  </mat-form-field>
+                </div>
+              </div>
+
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

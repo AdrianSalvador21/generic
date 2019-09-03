@@ -1,0 +1,19 @@
+@import "constants";
+@import "mixins";
+
+.container-form-client{
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: $margin-top;
+}
+.card-form-client {
+  width: 50%;
+}
+.form-field-content {
+  width: 90%;
+}
+.select-client-brand{
+  display: none;
+}
+

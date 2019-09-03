@@ -1,0 +1,14 @@
+@import "constants";
+@import "mixins";
+
+
+.administration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.administration-content {
+  width: 90%;
+  margin-top: $margin-top;
+}

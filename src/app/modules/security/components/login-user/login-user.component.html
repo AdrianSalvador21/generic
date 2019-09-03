@@ -1,0 +1,31 @@
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title>{{'security.login.title' | translate}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="login-card-content">
+    <form class="login-form" [formGroup]="loginForm" #form="ngForm" (submit)="loginSubmit()">
+      <!--User control-->
+      <mat-form-field appearance="outline" class="login-form-field">
+        <mat-label>{{'security.login.form-labels.user' | translate}}</mat-label>
+        <input autocomplete="off"
+               matInput
+               name="username"
+               type="text"
+               twoAutoFocus
+               placeholder="{{'security.login.form-labels.user' | translate}}"
+               formControlName="username" required>
+      </mat-form-field>
+      <!--Buttons-->
+      <mat-card-actions class="button-container-right">
+        <button type="submit" [disabled]="loginForm.invalid" mat-raised-button color="primary">
+          {{'buttons.continue' | translate}}
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="text--right">
+      <a class="link-action">{{'security.login.recover-user' | translate}}</a>
+    </div>
+  </mat-card-footer>
+</mat-card>

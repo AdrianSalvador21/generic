@@ -1,0 +1,140 @@
+@import '../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import "mixins";
+@import "material";
+
+* {
+  @include font-console();
+}
+
+a, .cp {
+  cursor: pointer;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 0 0;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.password-icon {
+  cursor: pointer;
+}
+
+pre {
+  background: $light-grey;
+  border: 1px solid $grey;
+  border-left: 3px solid $primary--color;
+  color: $primary--color;
+  page-break-inside: avoid;
+  font-size: calculateRem(15px);
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+  display: block;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.offline-error {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  text-align: center;
+
+  span {
+    transform: rotate(90deg);
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+}
+
+snack-bar-container {
+  background: $primary--color !important;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dadada;
+  cursor: pointer;
+  border-radius: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3e9ee;
+}
+
+.strength-meter[_ngcontent-c16] {
+  margin-top: 0 !important;
+}
+
+.input-control {
+  .mat-form-field-appearance-legacy.mat-form-field-infix {
+    padding: 0 !important;
+  }
+}
+
+.input-form-field {
+  width: 100%;
+}
+
+.button-container-right {
+  text-align: right;
+  width: 100%;
+}
+
+.link-action {
+  color: $link--color;
+  font-size: $text-font-size;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.security-image-medium {
+  border: 1px solid $light-grey;
+  border-radius: $border-radius;
+  height: 6.75rem;
+  width: 6.75rem;
+}
+
+.warning-disclaimer {
+  background-color: $light-grey;
+  text-align: justify;
+  color: $orange;
+  border-radius: $border-radius;
+  padding: .75rem;
+  line-height: 1.2rem;
+}
+
+.warning-icon {
+  vertical-align: middle;
+  font-size: 1.25rem;
+}

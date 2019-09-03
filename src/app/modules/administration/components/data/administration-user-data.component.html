@@ -1,0 +1,46 @@
+<div class="container-principal">
+ <div class="container-data">
+  <mat-card class="mat-card-data">
+    <!--<div fxLayout="row">-->
+      <!--<div fxFlex="45" fxFlex.gt-sm="45" class="row-divider">-->
+        <!--<mat-list>-->
+          <!--<mat-list-item class="mat-list">{{'administration.components.data.name' | translate}}</mat-list-item>-->
+          <!--<mat-divider ></mat-divider>-->
+          <!--<mat-list-item>{{'administration.components.data.first-surname' | translate}}</mat-list-item>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list-item>{{'administration.components.data.second-surname' | translate}}</mat-list-item>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list-item>{{'administration.components.data.email' | translate}}</mat-list-item>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list-item>{{'administration.components.data.phone' | translate}}</mat-list-item>-->
+          <!--<mat-divider></mat-divider>-->
+        <!--</mat-list>-->
+      <!--</div>-->
+      <!--<div fxFlex="45" fxFlex.gt-sm="45" class="row-divider">-->
+        <!--<mat-list>-->
+         <!--<mat-list-item class="mat-list">{{data.user['FIRSTNAME2010'] | titlecase}} </mat-list-item>-->
+         <!--<mat-divider ></mat-divider>-->
+         <!--<mat-list-item>{{data.user['LASTNAME2010'] | titlecase}}</mat-list-item>-->
+         <!--<mat-divider></mat-divider>-->
+         <!--<mat-list-item>{{data.user['SECONDSURNAME2010'] | titlecase}}</mat-list-item>-->
+         <!--<mat-divider></mat-divider>-->
+         <!--<mat-list-item>{{data.user['EMAIL2010'] | titlecase}}</mat-list-item>-->
+         <!--<mat-divider></mat-divider>-->
+         <!--<mat-list-item> {{data.user['CELLPHONE2010'] | titlecase}}</mat-list-item>-->
+         <!--<mat-divider></mat-divider>-->
+        <!--</mat-list>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="user-info">
+      <div class="user-name" fxLayout="row" *ngFor="let field of fieldsDetail">
+        <mat-list-item class="info-column" fxFlex="40">
+          {{'administration.components.profile.' + field | translate}}
+        </mat-list-item>
+        <mat-list-item class="info-column-data" fxFlex="40">
+          {{data.user[field]}}
+        </mat-list-item>
+      </div>
+    </div>
+  </mat-card>
+ </div>
+</div>

@@ -1,0 +1,104 @@
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title>{{'security.login.title' | translate}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="login-card-content">
+    <form class="login-form" #form="ngForm" [formGroup]="loginForm" (submit)="loginSubmit()">
+
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field>
+            <mat-select (opened)="loadSelect('firstQuestion')"
+                        name="select" placeholder="Pregunta 1"
+                        formControlName="firstQuestion">
+              <two-full-screen-spinner *ngIf="loadingSelect" class="select-spinner"></two-full-screen-spinner>
+              <mat-option value="" class="flash">
+                Seleccione una opción
+              </mat-option>
+              <mat-option *ngFor="let data of fistQuestionData; let i = index" [value]="data['questionKey']">
+                {{'security.login.secretQuestions.' + data['questionKey'] | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div fxFlex="5" fxFlex.gt-sm="5"></div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field class="input-form-field">
+            <input formControlName="firstValue"
+                   autocomplete="off"
+                   matInput name="firstValue"
+                   type="text"
+                   placeholder="Respuesta">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field>
+            <mat-select (opened)="loadSelect('secondQuestion')"
+                        name="select"
+                        placeholder="Pregunta 2"
+                        formControlName="secondQuestion">
+              <two-full-screen-spinner *ngIf="loadingSelect" class="select-spinner"></two-full-screen-spinner>
+              <mat-option value="">
+                Seleccione una opción
+              </mat-option>
+              <mat-option *ngFor="let data of secondQuestionData; let i = index" [value]="data['questionKey']">
+                {{'security.login.secretQuestions.' + data['questionKey'] | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div fxFlex="5" fxFlex.gt-sm="5"></div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field class="input-form-field">
+            <input formControlName="secondValue"
+                   autocomplete="off"
+                   matInput name="name"
+                   type="text"
+                   placeholder="Respuesta">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field>
+            <mat-select (opened)="loadSelect('thirdQuestion')"
+                        name="select" placeholder="Pregunta 3"
+                        formControlName="thirdQuestion">
+              <two-full-screen-spinner *ngIf="loadingSelect" class="select-spinner"></two-full-screen-spinner>
+              <mat-option value="">
+                Seleccione una opción
+              </mat-option>
+              <mat-option *ngFor="let data of thirdQuestionData; let i = index" [value]="data['questionKey']">
+                {{'security.login.secretQuestions.' + data['questionKey'] | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div fxFlex="5" fxFlex.gt-sm="5"></div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field class="input-form-field">
+            <input formControlName="thirdValue"
+                   autocomplete="off"
+                   matInput name="name"
+                   type="text"
+                   placeholder="Respuesta">
+          </mat-form-field>
+        </div>
+      </div>
+      <mat-card-actions class="button-container-right">
+        <button type="submit" class="change-password-button" [disabled]="loginForm.invalid" mat-raised-button color="primary">
+          {{'buttons.continue' | translate}}
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="text--right">
+      <a class="link-action">{{'security.login.recover-password' | translate}}</a>
+    </div>
+  </mat-card-footer>
+</mat-card>

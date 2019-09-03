@@ -1,0 +1,43 @@
+@import "constants";
+@import "mixins";
+.table-user-administration {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.table-user-administration {
+  .header {
+    padding-top: 15px !important;
+  }
+}
+
+.table-user-administration {
+  .viewMore {
+    padding-left: 10px !important;
+  }
+}
+.table-user-administration {
+  tr.mat-header-row {
+    height: 38px !important;
+    background: $menu-item-color;
+
+    .mat-header-cell {
+      color: $white;
+      font-size: 13px;
+    }
+  }
+}
+.table-user-administration{
+  .mat-row {
+    font: initial ;
+    text-align: left !important;
+  }
+}
+
+.details-icon {
+  margin-top: 0.3rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+

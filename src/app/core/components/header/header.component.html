@@ -1,0 +1,56 @@
+
+
+<header>
+  <mat-toolbar class="app-toolbar">
+    <div class="header-button-container">
+      <button mat-icon-button (click)="onClickMenuIcon()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <div class="header-container">
+      <div class="header-content">
+        <div class="user-info-container">
+          <!--User image-->
+          <div [matMenuTriggerFor]="menu" mat-card-avatar class="user-image" [ngStyle]="{'background': 'url(' + userImage + ') no-repeat center center', 'background-size': 'cover'}">
+          </div>
+            <mat-menu #menu="matMenu" class="user-menu">
+              <div *ngIf="!!userDetail && !!navItems" class="user-menu-content">
+                <div class="user-info-container">
+                  <div class="user-info-image" [ngStyle]="{'background': 'url(' + userImage + ') no-repeat center center', 'background-size': 'cover'}">
+                  </div>
+                  <div class="user-info">
+                    <p class="user-name">{{userDetail.firstName}} {{userDetail.lastName}}</p>
+                    <p class="">Ultima conexión</p>
+                  </div>
+                </div>
+                <mat-divider></mat-divider>
+                <button [routerLink]="navItem.objData" mat-menu-item *ngFor="let navItem of navItems">
+                  <span class="user-info-menu-option">
+                    {{navItem.description1 | translate}}
+                  </span>
+                  <span class="user-info-icon">
+                    <mat-icon aria-label="Example icon-button with a heart icon">{{navItem.icon}}</mat-icon>
+                  </span>
+                </button>
+                <mat-divider></mat-divider>
+
+                <!--LOGOUT BUTTON-->
+                <button mat-menu-item class="logout-button" (click)="logout()">
+                  <span class="user-logout-icon">
+                    <mat-icon aria-label="Example icon-button with a heart icon">save_alt</mat-icon>
+                  </span>
+                  <span class="user-info-menu-option">
+                    Logout
+                  </span>
+                </button>
+              </div>
+            </mat-menu>
+        </div>
+        <!--<div class="user-name-container">-->
+          <!--Steve Rogers-->
+        <!--</div>-->
+      </div>
+    </div>
+  </mat-toolbar>
+</header>

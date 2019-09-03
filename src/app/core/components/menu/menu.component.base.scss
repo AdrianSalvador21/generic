@@ -1,0 +1,15 @@
+@import "mixins";
+
+.menu-item {
+  border-bottom: 1px solid $menu-item-divider-color;
+  box-sizing: border-box;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  background: $menu-background-color;
+  color: $menu-item-hover-color;
+}

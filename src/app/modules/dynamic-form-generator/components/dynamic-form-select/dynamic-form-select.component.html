@@ -1,0 +1,76 @@
+<div class="select-container">
+  <div cdkDropList class="items-container">
+    <div cdkDropList
+         #elementsList="cdkDropList"
+         [cdkDropListData]="elements"
+         [cdkDropListConnectedTo]="[selectedElementsList]"
+         class="items-list"
+         (cdkDropListDropped)="drop($event)">
+      <div class="item-box" *ngFor="let element of elements" cdkDrag>
+        {{'dynamic-form-generator.elementsList.' + element | translate}}
+      </div>
+    </div>
+  </div>
+
+  <div class="selectedItems-container">
+    <div cdkDropList
+         #selectedElementsList="cdkDropList"
+         [cdkDropListData]="activeElements"
+         [cdkDropListConnectedTo]="[elementsList]"
+         class="example-list"
+         (cdkDropListDropped)="drop($event)">
+      <div class="itemSelected-box" *ngFor="let item of activeElements; let i = index" cdkDrag>
+        <!--ng if-->
+
+        <mat-accordion style="width: 100% !important">
+          <mat-expansion-panel>
+            <!--------HEADER-------------->
+            <mat-expansion-panel-header class="prevent-click">
+              <mat-panel-description>
+                <span class="element-title">{{'dynamic-form-generator.elementsList.' + item | translate}}</span>
+              </mat-panel-description>
+              <mat-panel-title style="float: right">
+                <mat-icon class="prevent-click-active" style="float: right;">edit</mat-icon>
+                <mat-icon class="prevent-click-active" (click)="deleteElement(i)" style="float: right;">restore_from_trash</mat-icon>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <!---------CONTENT------------>
+            <ng-container [ngSwitch]="item" class="prevent-click-active">
+              <div *ngSwitchCase="'button'">
+                <two-button-config #controlView></two-button-config>
+              </div>
+              <div *ngSwitchCase="'checkbox'">
+                <two-checkbox-config #controlView></two-checkbox-config>
+              </div>
+              <div *ngSwitchCase="'date'">
+                <two-date-config #controlView></two-date-config>
+              </div>
+              <div *ngSwitchCase="'input'">
+                <two-input-config #controlView></two-input-config>
+              </div>
+              <div *ngSwitchCase="'radiobutton'">
+                <two-radiobutton-config #controlView></two-radiobutton-config>
+              </div>
+              <div *ngSwitchCase="'select'">
+                <two-select-config #controlView></two-select-config>
+              </div>
+            </ng-container>
+
+
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+
+    <div class="actions-buttons-content">
+      <button [disabled]="activeElements.length == 0" (click)="save()" class="action-button" mat-flat-button color="primary">Save</button>
+      <button [disabled]="activeElements.length == 0" (click)="preview()" class="action-button" mat-flat-button color="primary">Preview</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showPreview">
+  <dynamic-form [fields]="config">
+  </dynamic-form>
+</div>

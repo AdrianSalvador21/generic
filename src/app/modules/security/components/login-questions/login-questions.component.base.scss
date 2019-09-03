@@ -1,0 +1,60 @@
+@import "constants";
+@import "mixins";
+
+.login-card {
+  min-width: 35rem;
+  min-height: 25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.login-card-content {
+  padding: 1.75rem 1.75rem;
+  background-color: $white;
+}
+
+.change-password-strength {
+  margin-bottom: $margin-bottom;
+}
+
+.change-password-button {
+  margin-top: $margin-top !important;
+}
+
+.value-control {
+  float: right;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1 !important;
+  }
+
+  25%,
+  75% {
+    opacity: 0 !important;
+  }
+}
+
+.flash {
+  animation-name: flash !important;
+}

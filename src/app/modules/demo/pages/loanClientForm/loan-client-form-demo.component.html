@@ -1,0 +1,114 @@
+<div class="container-form-client">
+<mat-card class="card-form-client">
+  <mat-card-header>
+    <mat-card-title>Prestamo Automotor</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="">
+    <form [formGroup]="loanForm" #form="ngForm">
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-list>
+            <mat-list-item>Marca</mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="form-field-content">
+            <mat-select #closeBrandsSelect class="" placeholder="Seleccionar marca" formControlName="brand"
+                         [(ngModel)]="brand" (click)="openDialog()">
+              <mat-option class="select-client-brand" *ngFor="let brand of allBrands"[value]="brand">
+                {{brand}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-list>
+            <mat-list-item>Modelo</mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="form-field-content">
+            <mat-select placeholder="Modelo" formControlName="model" (selectionChange)="changeValueModel(model)"
+                        [(ngModel)]="model">
+              <mat-option *ngFor="let model of allModels" [value]="model">
+                {{model}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-list>
+            <mat-list-item>Numero de cuotas</mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="form-field-content">
+            <mat-select placeholder="Numero de cuotas" formControlName="feeNumber" (selectionChange)="changeValueFee(feeNumber)"
+                        [(ngModel)]="feeNumber">
+              <mat-option *ngFor="let feeNumber of allFeeNumbers" [value]="feeNumber">
+                {{feeNumber}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-list>
+            <mat-list-item>Cuotas valor</mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="form-field-content">
+            <input autocomplete="off"
+                   readonly="true"
+                   matInput name="feeValue"
+                   type="text"
+                   value="{{feeValue}}"
+                   formControlName="feeValue" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-list>
+            <mat-list-item>Intereses</mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="form-field-content">
+            <input autocomplete="off"
+                   readonly="true"
+                   matInput name="interests"
+                   type="text"
+                   value="{{interests}}"
+                   formControlName="interests" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-list>
+            <mat-list-item>Total a pagar</mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="45" fxFlex.gt-sm="45">
+          <mat-form-field appearance="outline" class="form-field-content">
+            <input autocomplete="off"
+                   readonly="true"
+                   matInput name="totalPay"
+                   type="text"
+                   value="{{totalPay}}"
+                   formControlName="totalPay" required>
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>Generic Console</title>
+  <meta content='Generic Console' name='description'>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="
+          default-src 'self' 'unsafe-inline' 'unsafe-eval'
+          data:
+          blob:
+          wss:
+
+          http://*.google-analytics.com
+          http://*.googletagmanager.com
+
+          https://*.google-analytics.com
+          https://angularexampleapp.com
+          https://*.googletagmanager.com
+          https://*.gstatic.com
+          https://*.googleapis.com
+          https://*.herokuapp.com
+          https://authedmine.com
+
+          http://localhost:8080
+          ws://localhost:4200
+
+          http://localhost:10080
+          http://10.248.11.21:8080
+          http://10.248.11.20:8080;
+    ">
+
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+<two-root>
+  <div class="landing-spinner">
+    <div class="blob blob-0"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="blob blob-5"></div>
+  </div>
+</two-root>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import "mixins";
+
+.container-principal {
+  justify-content: center;
+}
+
+.mat-card-data {
+  .mat-divider{
+    margin:-5% 0 3%;
+  }
+  .mat-divider-horizontal {
+    position: inherit !important;
+    width: 90%;
+  }
+}
+
+.row-divider{
+  .mat-list-base{
+    padding-left: 20% !important;
+  }
+}
+
+.user-info {
+  color: $menu-item-color;
+  width: 95%;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  margin: 0 1rem 0 1rem;
+}
+
+.info-column {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.info-column-data {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+

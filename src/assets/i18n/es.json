@@ -1,0 +1,194 @@
+{
+  "security": {
+    "login": {
+      "errors": {
+        "unauthorized": "Usuario o password incorrectos."
+      },
+      "title": "Inicio de sesión",
+      "form-labels": {
+        "user": "Usuario",
+        "password": "Contraseña",
+        "rol": "Rol",
+        "rol-select": {
+          "default": "Seleccione una opción"
+        }
+      },
+      "secretQuestions": {
+        "sq1": "¿Pregunta prueba uno?",
+        "sq2": "¿Pregunta prueba dos?",
+        "sq3": "¿Pregunta prueba tres?",
+        "sq4": "¿Pregunta prueba cuatro?",
+        "sq5": "¿Pregunta prueba cinco?",
+        "sq6": "¿Pregunta prueba seis?",
+        "sq7": "¿Pregunta prueba siete?"
+      },
+      "recover-user": "Recuperar usuario",
+      "recover-password": "Recuperar contraseña",
+      "security-image-disclaimer": "Asegurese de que la imagen de seguridad que se despliega es la que usted seleccionó, de lo contrario cancele el proceso y vuelva a intentarlo o comuniquese con el administrador."
+    },
+    "profile": {
+      "menu": {
+        "options": {
+          "editProfile": "Perfil",
+          "changePassword": "Cambiar contraseña",
+          "secretQuestion": "Pregunta secreta"
+        }
+      },
+      "changePassword": {
+        "form-labels": {
+          "newPassword": "Nueva contraseña",
+          "confirmPassword": "Confirmar contraseña"
+        }
+      },
+      "editProfile": {
+        "cellPhone": "Teléfono",
+        "gender": "Género",
+        "email": "Correo electrónico",
+        "nationality": "Nacionalidad"
+      }
+    }
+  },
+  "dynamic-form-generator": {
+    "elementsList": {
+      "button": "Button",
+      "checkbox": "Checkbox",
+      "date": "Date",
+      "input": "Input",
+      "radiobutton": "RadioButton",
+      "select": "Select"
+    },
+    "elementsConfig": {
+      "input": {
+        "form": {
+          "label-control": "Label",
+          "name-control": "Name",
+          "inputType-control": "Input Type",
+          "validators-control": "Validators",
+          "validators": {
+            "required": "Required",
+            "maxLength": "Max Length",
+            "minLength": "Min Length",
+            "pattern": "Pattern"
+          },
+          "inputTypes": {
+            "email": "Email",
+            "number": "Number",
+            "text": "Text"
+          }
+        }
+      },
+      "date": {
+        "dateTypes": {
+          "date": "Date",
+          "time": "Time",
+          "dateTime": "Date/Time"
+        }
+      },
+      "button": {
+        "form": {
+          "label-control": "Label"
+        }
+      },
+      "checkbox": {
+        "form": {
+          "label-control": "Label",
+          "name-control": "Name",
+          "default-control": "Default control",
+          "default-controls": {
+            "true": "True",
+            "false": "False"
+          }
+        }
+      },
+      "select": {
+        "form": {
+          "label-control": "Label",
+          "name-control": "Name",
+          "options-label": "Options",
+          "option-control": "Option label",
+          "value-control": "Value"
+        }
+      },
+      "radiobutton": {
+        "form": {
+          "label-control": "Label",
+          "name-control": "Name",
+          "options-label": "Options",
+          "option-control": "Option label",
+          "value-control": "Value"
+        }
+      }
+    }
+  },
+  "administration": {
+    "components": {
+      "data": {
+        "name": "Nombre",
+        "first-surname": "Primer apellido",
+        "second-surname": "Segundo apellido",
+        "email": "Email",
+        "phone": "Teléfono",
+        "roles": "Roles"
+      },
+      "high-user": {
+        "high-user": "Alta Usuario",
+        "name": "Nombre",
+        "user-name": "Nombre de usuario",
+        "first-surname": "Primer apellido",
+        "second-surname": "Segundo apellido",
+        "email": "Email",
+        "phone": "Teléfono",
+        "password": "Contraseña",
+        "document-id": "Documento ID",
+        "document-type": "Tipo de documento",
+        "country": "Seleccione pais",
+        "citizenship": "Ciudadania",
+        "birth-day": "Fecha de nacimiento"
+      },
+      "profile": {
+        "social-status": "Estatus social",
+        "nationality": "Nacionalidad",
+        "FIRSTNAME2010": "Nombre",
+        "LASTNAME2010": "Apellido",
+        "EMAIL2010": "Correo electrónico",
+        "CELLPHONE2010": "Teléfono celular",
+        "NATIONALITY2010": "Nacionalidad"
+      }
+    }
+  },
+  "buttons": {
+    "continue": "Continuar",
+    "cancel": "Cancelar",
+    "change": "Confirmar",
+    "add": "Add",
+    "save": "Guardar",
+    "search": "Buscar",
+    "search-user": "Buscar usuario",
+    "view-details": "Ver detalles"
+  },
+  "dialogs": {
+    "confirmPasswordDialog": {
+      "title": "Confirma tu contraseña",
+      "password": "Contraseña"
+    }
+  },
+  "menu": {
+    "main": {
+      "home": "Inicio",
+      "demo4": "Demo 4",
+      "administration": "Administración",
+      "parent": "Nodo Padre",
+      "users": "Usuarios",
+      "demo2": "Demo 2",
+      "demo6": "Demo 6",
+      "demo3": "Demo 3",
+      "demo5": "Demo 5"
+    },
+    "user": {
+      "profile": "Perfil",
+      "mail": "E-Mail"
+    }
+  },
+  "error404": "Error 404",
+  "mayTheForce": "Que la fuerza te acompañe"
+}
