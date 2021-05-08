@@ -129,7 +129,7 @@
     "karma-sauce-launcher": "^2.0.2",
     "karma-sourcemap-loader": "^0.3.7",
     "moment": "^2.24.0",
-    "ng-packagr": "^5.7.1",
+    "ng-packagr": "^10.1.1",
     "ngx-store": "2.1.0",
     "node-sass": "^4.11.0",
     "path": "0.12.7",
